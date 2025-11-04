@@ -4,7 +4,7 @@
 	"version": "1.0.0",
 	"description": "The xyOps.io website.",
 	"author": "Joseph Huckaby <jhuckaby@pixlcore.com>",
-	"homepage": "https://github.com/pixlcore/xyops.io",
+	"homepage": "https://github.com/pixlcore/www.xyops.io",
 	"license": "BSD-3-Clause",
 	"main": "lib/api.js",
 	"scripts": {
@@ -12,10 +12,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/pixlcore/xyops.io"
+		"url": "https://github.com/pixlcore/www.xyops.io"
 	},
 	"bugs": {
-		"url": "https://github.com/pixlcore/xyops.io/issues"
+		"url": "https://github.com/pixlcore/www.xyops.io/issues"
 	},
 	"keywords": [
 		"pixlcore",
