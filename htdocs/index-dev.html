@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>xyOps - Open Workflow Automation</title>
+	<meta name="description" content="A next-generation workflow automation system with job scheduling, monitoring, alerting, and ticketing all built right in.">
+	<meta name="author" content="PixlCore LLC">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="256x256">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<meta name="theme-color" content="#000000">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://xyops.io/">
+	<meta property="og:title" content="xyOps - Open Workflow Automation">
+	<meta property="og:description" content="A next-generation workflow automation system with job scheduling, monitoring, alerting, and ticketing all built right in.">
+	<meta property="og:image" content="https://xyops.io/images/social-preview.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:site_name" content="xyOps">
+	<meta property="og:locale" content="en_US">
+	
+	<!-- BUILD: COMBINE_STYLE_START -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/misc.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/materialdesignicons.min.css">
+	<!-- BUILD: COMBINE_STYLE_END -->
+</head>
+
+<body class="dark">
+<div id="toaster"></div>
+<div class="container">
+	
+	<div class="hero">
+		<div class="words">
+			<div class="logo"></div>
+			<h1>Orchestrate your entire infrastructure</h1>
+			<h2>xyOps&trade; is a next-generation workflow automation system, with job scheduling, monitoring, alerting, and ticketing all built right in.</h2>
+			<h3>Launching in early 2026!</h3>
+		</div>
+		<div class="ss_wrap">
+			<div class="screenshot">
+				<div class="ss_glow"></div>
+				<div class="ss_dot_container"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="features">
+	
+		<div class="unit">
+			<h4><i class="mdi mdi-rocket-launch"></i>Why xyOps?</h4>
+			<h5>Schedule jobs across your fleet, track performance, set alerts, and view everything live — all in one place.</h5>
+			<ul>
+				<li>Flexible workflows with visual editor.</li>
+				<li>Graph-based server metrics and historical stats.</li>
+				<li>Easily extensible with plugin support in any language.</li>
+			</ul>
+		</div>
+		
+		<div class="unit">
+			<h4><i class="mdi mdi-calendar-clock"></i>Job Scheduling Reimagined</h4>
+			<h5>xyOps brings superpowers to job scheduling — way beyond cron.</h5>
+			<ul>
+				<li>Multiple schedules per event.</li>
+				<li>Start and end dates.</li>
+				<li>Blackout ranges for holidays or downtime.</li>
+				<li>Crontab import support.</li>
+				<li>One-time jobs (single-shot).</li>
+				<li>Plugin-based scheduler extensions.</li>
+			</ul>
+		</div>
+		
+		<div class="unit">
+			<h4><i class="mdi mdi-clipboard-text"></i>Build Workflows Visually</h4>
+			<h5>Use the graphical workflow editor to connect events, triggers, actions, and monitors into meaningful pipelines.</h5>
+			<ul>
+				<li>Chain multiple jobs with conditional logic.</li>
+				<li>Pass data and even files between workflow steps.</li>
+				<li>Assign actions on triggers (e.g. notifications or web hooks).</li>
+				<li>Attach limiters: timeouts, memory caps, log size caps.</li>
+			</ul>
+		</div>
+		
+		<div class="unit">
+			<h4><i class="mdi mdi-chart-areaspline"></i>Monitor Everything</h4>
+			<h5>Define exactly what you want to monitor, and get notified the moment things go wrong.</h5>
+			<ul>
+				<li>Server and group-level dashboards.</li>
+				<li>Add your own custom monitors and alerts.</li>
+				<li>CPU, memory, network, disk, and log tracking per job.</li>
+				<li>Run custom commands to grab custom metrics.</li>
+				<li>Historical performance graphs (hourly to yearly).</li>
+			</ul>
+		</div>
+		
+		<div class="unit">
+			<h4><i class="mdi mdi-bell-ring"></i>Smart Alerts</h4>
+			<h5>Rich alerting with full customization and complex triggers.</h5>
+			<ul>
+				<li>Trigger expressions with flexible rules.</li>
+				<li>Email and webhook notifications.</li>
+				<li>Alerts include a snapshot of the server.</li>
+			</ul>
+		</div>
+		
+		<div class="unit">
+			<h4><i class="mdi mdi-server-network"></i>Built for Fleets</h4>
+			<h5>Whether you have five servers or five thousand, xyOps adapts to your needs.</h5>
+			<ul>
+				<li>Easily install agents on macOS, Linux, Windows — even Raspberry Pi!</li>
+				<li>Add ephemeral cloud servers automatically on boot.</li>
+				<li>Group servers manually or automatically based on hostname.</li>
+			</ul>
+		</div>
+		
+		<div class="unit">
+			<h4><i class="mdi mdi-code-json"></i>Developer-Friendly</h4>
+			<h5>Designed with you in mind.  Yes, <b>you</b>!</h5>
+			<ul>
+				<li>Plugin system — use any language.</li>
+				<li>JSON-based messaging for plugin communication.</li>
+				<li>REST API for external scheduling and event control.</li>
+				<li>Role-based API keys for authentication.</li>
+			</ul>
+		</div>
+		
+		<div class="unit">
+			<h4><i class="mdi mdi-cloud-upload"></i>Simple Setup</h4>
+			<h5>From download to deployment in minutes.</h5>
+			<ul>
+				<li>One-click install for agents, with zero dependencies.</li>
+				<li>Single or multi-server configuration.</li>
+				<li>Automatic failover and backup support.</li>
+				<li>Export/import everything via UI.</li>
+			</ul>
+		</div>
+		
+		<div class="unit">
+			<h4><i class="mdi mdi-license"></i>Licensing</h4>
+			<h5>xyOps is BSD-licensed for maximum flexibility.</h5>
+			<ul>
+				<li><b>Free Tier:</b> Self-hosted, community supported.</li>
+				<li><b>Pro Tier:</b> Hosted by us, encrypted, safe, 24-hour support response.</li>
+				<li><b>Enterprise Tier:</b> On-prem hosting option, SSO, priority support, dedicated account manager.</li>
+			</ul>
+		</div>
+		
+	</div>
+	
+	<!-- Visual Workflow Builder -->
+	<div class="detail_section layout_1">
+		<div class="detail_list">
+			<div class="detail_title">Visual Workflow Builder</div>
+			<div class="detail_item">Chain multiple jobs with conditional logic.</div>
+			<div class="detail_item">Pass data and even files between workflow steps.</div>
+			<div class="detail_item">Assign actions to events (e.g. notifications or web hooks).</div>
+			<div class="detail_item">Attach limiters: timeouts, memory caps, log size caps.</div>
+			<div class="detail_item">Run jobs in parallel or create custom queues.</div>
+		</div>
+		<div class="detail_shot">
+			<div class="detail_glow" style="background:var(--blue); opacity:0.5;"></div>
+			<div class="detail_img" style="background-image:url(images/featureshots/workflow-edit.webp)"></div>
+			<div class="detail_floater top_right" style="background-image:url(images/featureshots/floater-select-condition.webp)"></div>
+		</div>
+	</div>
+	
+	<!-- Job Scheduling -->
+	<div class="detail_section layout_2">
+		<div class="detail_list">
+			<div class="detail_title" style="color:var(--purple)">Flexible Job Scheduler</div>
+			<div class="detail_item">Multiple schedules per event.</div>
+			<div class="detail_item">Blackout ranges for holidays or downtime.</div>
+			<div class="detail_item">Crontab import support.</div>
+			<div class="detail_item">One-time jobs (single-shot).</div>
+			<div class="detail_item">Plugin-based scheduler extensions.</div>
+			<div class="detail_item">Magic Link triggers.</div>
+		</div>
+		<div class="detail_shot">
+			<div class="detail_glow" style="background:var(--purple); opacity:0.4;"></div>
+			<div class="detail_img di_sched" style="background-image:url(images/featureshots/edit-trigger-weekly.webp)"></div>
+			<div class="detail_floater top_left" style="background-image:url(images/featureshots/floater-select-trigger-type.webp)"></div>
+		</div>
+	</div>
+	
+	<!-- Active Job Tracking -->
+	<div class="detail_section layout_1">
+		<div class="detail_list">
+			<div class="detail_title" style="color:var(--yellow)">Active Job Tracking</div>
+			<div class="detail_item">Run any number of jobs in parallel.</div>
+			<div class="detail_item">Optionally set a max parallel limit and queue up the rest.</div>
+			<div class="detail_item">Real-time progress updates, plus time remaining.</div>
+			<div class="detail_item">Enforce limits such as CPU and memory usage per job.</div>
+			<div class="detail_item">Your jobs can emit their own progress and stats.</div>
+			<div class="detail_item">Run custom actions based on the job result.</div>
+		</div>
+		<div class="detail_shot">
+			<div class="detail_glow" style="background:var(--yellow); opacity:0.2;"></div>
+			<div class="detail_img" style="background-image:url(images/featureshots/active-jobs-many-crop.webp)"></div>
+			<div class="detail_floater df_widgets" style="background-image:url(images/featureshots/header-widgets.webp)"></div>
+		</div>
+	</div>
+	
+	<!-- Monitor Anything -->
+	<div class="detail_section layout_2">
+		<div class="detail_list">
+			<div class="detail_title" style="color:var(--cyan)">Server Monitoring</div>
+			<div class="detail_item">Server and group-level dashboards.</div>
+			<div class="detail_item">Add your own custom monitors and alerts.</div>
+			<div class="detail_item">CPU, memory, network, disk, and log tracking per job.</div>
+			<div class="detail_item">Run custom commands to grab custom metrics.</div>
+			<div class="detail_item">Historical performance graphs (from hourly to yearly).</div>
+		</div>
+		<div class="detail_shot">
+			<div class="detail_glow" style="background:var(--cyan); opacity:0.4;"></div>
+			<div class="detail_img" style="background-image:url(images/featureshots/small-charts.webp)"></div>
+			<div class="detail_floater top_right" style="background-image:url(images/featureshots/floater-mem-details.webp)"></div>
+		</div>
+	</div>
+	
+	<!-- Smart Alerts -->
+	<div class="detail_section layout_1">
+		<div class="detail_list">
+			<div class="detail_title" style="color:var(--red)">Smart Alerts</div>
+			<div class="detail_item">Trigger expressions with flexible rules.</div>
+			<div class="detail_item">Email, webhook and custom notifications.</div>
+			<div class="detail_item">All alerts include a snapshot of the server.</div>
+			<div class="detail_item">Alerts can create tickets or run jobs.</div>
+			<div class="detail_item">Alerts can prevent new jobs while they are active.</div>
+		</div>
+		<div class="detail_shot">
+			<div class="detail_glow" style="background:var(--red)"></div>
+			<div class="detail_img" style="background-position:right center; background-image:url(images/featureshots/cpu-load-alert.webp)"></div>
+			<div class="detail_floater top_left" style="background-image:url(images/featureshots/floater-alert-edit-compact.webp)"></div>
+			<div class="detail_floater bottom_right float_alert" style="background-image:url(images/featureshots/floater-toast-warning-new-alert.webp)"></div>
+		</div>
+	</div>
+	
+	<!-- Ticket System -->
+	<div class="detail_section layout_2">
+		<div class="detail_list">
+			<div class="detail_title" style="color:var(--teal)">Integrated Ticketing System</div>
+			<div class="detail_item">Built-in ticketing for incident response.</div>
+			<div class="detail_item">Alerts and failed jobs can automatically create tickets.</div>
+			<div class="detail_item">Tickets can attach files and run jobs for CI/CD systems.</div>
+			<div class="detail_item">Fully scriptable via API.</div>
+		</div>
+		<div class="detail_shot">
+			<div class="detail_glow" style="background:var(--teal); opacity:0.2;"></div>
+			<div class="detail_img" style="background-image:url(images/featureshots/ticket-attribs-3x3.webp)"></div>
+			<div class="detail_floater top_right" style="background-image:url(images/featureshots/floater-select-ticket-type.webp)"></div>
+			<div class="detail_floater bottom_left float_tags" style="background-image:url(images/featureshots/floater-select-ticket-tags.webp)"></div>
+		</div>
+	</div>
+	
+	<!-- Plugins -->
+	<div class="detail_section layout_1">
+		<div class="detail_list">
+			<div class="detail_title" style="color:var(--orange)">Write Plugins in Any Language</div>
+			<div class="detail_item">Use a simple JSON over STDIO Plugin API.</div>
+			<div class="detail_item">No SDK needed, and all languages are supported.</div>
+			<div class="detail_item">Define custom params with UI form fields.</div>
+			<div class="detail_item">Multiple Plugin types including Event, Action, Monitor and Trigger.</div>
+		</div>
+		<div class="detail_shot">
+			<div class="detail_glow" style="background:var(--orange)"></div>
+			<div class="detail_img" style="background-position:right bottom; background-image:url(images/featureshots/plugin-script-editor-wider.webp)"></div>
+			<div class="detail_floater top_left" style="background-image:url(images/featureshots/floater-plugin-new-param-dialog.webp)"></div>
+		</div>
+	</div>
+	
+	<!-- Marketplace -->
+	<div class="detail_section layout_2">
+		<div class="detail_list">
+			<div class="detail_title">Plugin Marketplace</div>
+			<div class="detail_item">Access our growing library of ready-made xyOps Plugins.</div>
+			<div class="detail_item">Both official and community based Plugins are available.</div>
+			<div class="detail_item">Easily add MCP servers as Plugins.</div>
+			<div class="detail_item">Write and publish your own Plugins to the store!</div>
+		</div>
+		<div class="detail_shot">
+			<!-- <div class="detail_glow" style="background:var(--teal)"></div> -->
+			<div class="detail_plugin_grid">
+				<div class="detail_plug" style="background-image:url(images/logos/atlassian.png)"><div>Atlassian</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/aws.png)"><div>AWS S3</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/bluesky.png)"><div>Bluesky</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/cloudinary.png)"><div>Cloudinary</div></div>
+				
+				<div class="detail_plug" style="background-image:url(images/logos/discord.png)"><div>Discord</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/github.png)"><div>Github</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/google-sheets.png)"><div>Google Sheets</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/linear.png)"><div>Linear</div></div>
+				
+				<div class="detail_plug" style="background-image:url(images/logos/mastodon.png)"><div>Mastodon</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/notion.png)"><div>Notion</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/openai.png)"><div>OpenAI</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/pushover.png)"><div>Pushover</div></div>
+				
+				<div class="detail_plug" style="background-image:url(images/logos/replicate.png)"><div>Replicate</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/slack.png)"><div>Slack</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/telegram.png)"><div>Telegram</div></div>
+				<div class="detail_plug" style="background-image:url(images/logos/twilio.png)"><div>Twilio</div></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Scalability -->
+	 <div class="detail_section layout_1">
+		<div class="detail_list">
+			<div class="detail_title" style="color:var(--yellow)">Scalability &amp; Redundancy</div>
+			<div class="detail_item">Run multiple hot backups, to take over on power loss.</div>
+			<div class="detail_item">No jobs are interrupted on primary failover.</div>
+			<div class="detail_item">Scales to thousands of worker servers in your cluster.</div>
+			<div class="detail_item">Group servers manually or automatically based on hostname.</div>
+			<div class="detail_item">Easily install agents on macOS, Linux, and Windows.</div>
+		</div>
+		<div class="detail_shot">
+			<div class="detail_chart_grid">
+				<div><canvas id="c_live_cpu"></canvas></div>
+				<div><canvas id="c_live_mem"></canvas></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Licensing -->
+	<div class="detail_section layout_2">
+		<div class="detail_list">
+			<div class="detail_title" style="color:var(--green)">Pricing &amp; Licensing</div>
+			<div class="detail_item">xyOps&trade; is 100% free and open source under the BSD 3-Clause license, <b>and it always will be.</b></div>
+			<div class="detail_item">The license will never be modified, split, or appended with additional restrictive terms.</div>
+			<div class="detail_item">No new code or contributions will ever be accepted under a non-OSI-approved license.</div>
+			<div class="detail_item">We will offer cloud hosting and enterprise support plans separately (pricing to be announced).</div>
+			<div class="detail_item">All current and future features will be open source forever.</div>
+		</div>
+		<div class="detail_shot">
+			<div class="detail_glow" style="background:var(--green); opacity:0.2;"></div>
+			<div class="detail_img" style="background-image:url(images/featureshots/licensing.webp)"></div>
+		</div>
+	</div>
+	
+	<!-- Sign Up Form -->
+	<div class="vingette">
+		<div id="ship"><div id="flame"></div></div>
+		<form action="post" class="signup">
+			
+			<div class="dialog inline superglow scrollin">
+				<div class="dialog_close" onClick="app.startGame()"><i class="mdi mdi-close-circle-outline"></i></div>
+				<div class="dialog_title"><i class="mdi mdi-rocket-launch">&nbsp;</i>We're launching soon!</div>
+				<div class="dialog_content">
+					<div class="dialog_intro">Sign up here to be notified when we do.</div>
+					<div class="dialog_box_content scroll maximize">
+						
+						<div class="form_row">
+							<div class="fr_label">Email Address:</div>
+							<div class="fr_content"><input name="email" id="email" spellcheck="false" autocomplete="email" type="text"></div>
+							<div class="fr_caption"><span>(Your address will be kept private and used only once.)</span></div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="dialog_buttons">
+					<div class="button primary" tabindex="0" onClick="app.signUp()"><i class="mdi mdi-email-plus-outline">&nbsp;</i>Notify Me</div>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+	
+	<!-- Footer -->
+	<div class="footer">
+		<div class="left_foot">
+			<div><a href="https://pixlcore.com/"><img src="images/pixlcore-logotype.png" style="height:32px"></a></div>
+			<p>Copyright &copy; 2025 PixlCore and Joseph Huckaby.</p>
+			<p>xyOps&trade; is a trademark of PixlCore LLC.</p>
+		</div>
+		<div class="right_foot">
+			<div>
+				<a href="https://www.youtube.com/@PixlCore-Media" target="_blank"><img src="images/logos/youtube.png" height="32"></a>
+				<a href="https://pixlcore.bsky.social/" target="_blank"><img src="images/logos/bluesky.png" height="32"></a>
+				<a href="https://mastodon.social/@pixlcore" target="_blank"><img src="images/logos/mastodon.png" height="32"></a>
+				<a href="https://pixlcore.com/feed.rss" target="_blank"><img src="images/logos/rss.png" height="32"></a>
+			</div>
+			<p>Keep us on your radar!</p>
+		</div>
+	</div>
+	
+</div>
+
+<script src="js/external/jquery.min.js"></script>
+
+<!-- BUILD: COMBINE_SCRIPT_START -->
+<script src="js/external/confetti.browser.js"></script>
+<script src="js/external/chart.min.js"></script>
+<script src="js/geometry.js"></script>
+<script src="js/perlin.js"></script>
+<script src="js/misc.js"></script>
+<script src="js/app.js"></script>
+<!-- BUILD: COMBINE_SCRIPT_END -->
+
+</body>
+</html>

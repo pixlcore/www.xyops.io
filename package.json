@@ -1,0 +1,62 @@
+{
+	"name": "www.xyops.io",
+	"private": true,
+	"version": "1.0.0",
+	"description": "The xyOps.io website.",
+	"author": "Joseph Huckaby <jhuckaby@pixlcore.com>",
+	"homepage": "https://github.com/pixlcore/xyops.io",
+	"license": "BSD-3-Clause",
+	"main": "lib/api.js",
+	"scripts": {
+		"install": "node bin/build.js dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pixlcore/xyops.io"
+	},
+	"bugs": {
+		"url": "https://github.com/pixlcore/xyops.io/issues"
+	},
+	"keywords": [
+		"pixlcore",
+		"xyops",
+		"webapp"
+	],
+	"dependencies": {
+		"@mdi/font": "7.4.47",
+		"@mdi/svg": "7.4.47",
+		"async": "2.6.4",
+		"class-plus": "^2.0.0",
+		"jquery": "3.6.0",
+		"canvas-confetti": "1.9.3",
+		"pixl-chart": "^1.0.26",
+		"pixl-tools": "^1.0.24",
+		"pixl-xyapp": "^2.1.0",
+		"uglify-js": "3.13.5"
+	},
+	
+	"pool": "default",
+	"acl": false,
+	"headers": {
+		"host": "^(www\\.|dev\\.)?(xyops\\.io)(\\:\\d+)?$"
+	},
+	"routes": [
+		{
+			"type": "static",
+			"uri_match": "^/\\.well\\-known",
+			"path": "/opt/poolnoodle/htdocs/.well-known"
+		},
+		{
+			"type": "script",
+			"uri_match": "^/api",
+			"path": "lib/api.js",
+			"max_requests_per_sec": 100,
+			"max_concurrent_requests": 10
+		},
+		{
+			"type": "static",
+			"uri_match": "^/",
+			"path": "htdocs"
+		}
+	]
+}
