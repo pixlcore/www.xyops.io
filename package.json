@@ -1,7 +1,7 @@
 {
 	"name": "www.xyops.io",
 	"private": true,
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "The xyOps.io website.",
 	"author": "Joseph Huckaby <jhuckaby@pixlcore.com>",
 	"homepage": "https://github.com/pixlcore/www.xyops.io",
@@ -30,6 +30,7 @@
 		"jquery": "3.6.0",
 		"canvas-confetti": "1.9.3",
 		"pixl-chart": "^1.0.26",
+		"pixl-request": "^2.0.3",
 		"pixl-tools": "^1.0.24",
 		"pixl-xyapp": "^2.1.0",
 		"uglify-js": "3.13.5"
