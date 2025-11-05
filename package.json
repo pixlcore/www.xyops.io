@@ -1,7 +1,7 @@
 {
 	"name": "www.xyops.io",
 	"private": true,
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "The xyOps.io website.",
 	"author": "Joseph Huckaby <jhuckaby@pixlcore.com>",
 	"homepage": "https://github.com/pixlcore/www.xyops.io",
@@ -42,11 +42,6 @@
 		"host": "^(www\\.|dev\\.)?(xyops\\.io)(\\:\\d+)?$"
 	},
 	"routes": [
-		{
-			"type": "static",
-			"uri_match": "^/\\.well\\-known",
-			"path": "/opt/poolnoodle/htdocs/.well-known"
-		},
 		{
 			"type": "script",
 			"uri_match": "^/api",
