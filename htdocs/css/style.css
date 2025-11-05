@@ -101,6 +101,10 @@ body.game {
 	transform: rotateY(-7deg);
 	transform-style: preserve-3d;
 	
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	
 	/* view-timeline: --hero block;
 	animation: heroAnimation linear both;
 	animation-timeline: --hero;

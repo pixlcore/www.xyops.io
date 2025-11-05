@@ -38,7 +38,9 @@ var app = {
 			$('.ss_dot_container').append( $dot );
 			slide.$dot = $dot;
 			
-			var $img = $('<img>').addClass('ss_img').attr('src', app.slideBaseURL + '/' + slide.url);
+			var $img = $('<img>').addClass('ss_img').attr('src', app.slideBaseURL + '/' + slide.url).on('mousedown', function() {
+				app.nextSlide();
+			});
 			$('.screenshot').append( $img );
 			slide.$img = $img;
 		} );
