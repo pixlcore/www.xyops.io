@@ -47,6 +47,13 @@ var app = {
 		
 		this.setSlide(0);
 		
+		// starting pulse animation to draw attention to dots
+		$('.ss_dot').each( function(idx) {
+			var $this = $(this);
+			if ($this.hasClass('active')) return;
+			setTimeout( function() { $this.addClass('pulse'); }, 750 + (idx * 150) );
+		} );
+		
 		this.setupCharts();
 		
 		$('#email').keypress( function(event) {
@@ -88,6 +95,12 @@ var app = {
 		
 		this.vingette = $('.vingette')[0];
 		$('.vingette').on('pointermove', this.moveShip.bind(this));
+	},
+	
+	scrollToForm() {
+		// smooth-scroll to bottom of page to reveal sign-up form
+		$('.dialog.inline')[0].scrollIntoView({ behavior: "smooth", block: "center" });
+		// $('#email').focus();
 	},
 	
 	moveShip(event) {
@@ -142,7 +155,7 @@ var app = {
 	setSlide(idx) {
 		var slide = this.slides[idx];
 		
-		$('.ss_dot, .ss_img').removeClass('active');
+		$('.ss_dot, .ss_img').removeClass('active pulse');
 		slide.$dot.addClass('active');
 		slide.$img.addClass('active');
 		

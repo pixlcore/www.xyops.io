@@ -74,7 +74,18 @@ body.game {
 }
 .words > h3 {
 	margin-top: 40px;
+	margin-bottom: 10px;
 	font-size: 19px;
+}
+.words > h4 {
+	margin-top: 0;
+	font-style: italic;
+	color: var(--blue);
+	cursor: pointer;
+}
+.words > h4:hover {
+	color: var(--theme-color);
+	text-decoration: underline;
 }
 
 .ss_wrap {
@@ -166,6 +177,22 @@ body.game {
 .ss_dot.active {
 	background-color: var(--theme-color);
 	box-shadow: 0px 0px 4px var(--theme-color);
+}
+
+@keyframes ss_pulse_kf {
+	0% {
+		background-color: var(--blue);
+		box-shadow: 0px 0px 2px 1px var(--theme-color-highlight);
+	}
+	100% {
+		background-color: var(--background-color);
+		box-shadow: 0px 0px 24px 12px transparent;
+	}
+}
+
+.ss_dot.pulse {
+	animation: ss_pulse_kf 0.7s ease-in-out;
+	animation-fill-mode: forwards;
 }
 
 /* Features */
