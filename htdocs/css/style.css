@@ -1079,6 +1079,7 @@ div.dialog.inline.scrollin {
 	
 	.vingette {
 		mask-image: none;
+		background-image: none;
 	}
 	form.signup {
 		margin-top: 2vh;
@@ -1086,12 +1087,14 @@ div.dialog.inline.scrollin {
 		
 		padding-top: 100px;
 		padding-bottom: 150px;
-		
-		background-image: none;
 	}
 	.dialog.inline {
 		margin-left: 15px;
 		margin-right: 15px;
+	}
+	
+	#ship, #flame {
+		display: none;
 	}
 }
 
