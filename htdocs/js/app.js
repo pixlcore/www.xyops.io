@@ -97,10 +97,9 @@ var app = {
 		$('.vingette').on('pointermove', this.moveShip.bind(this));
 	},
 	
-	scrollToForm() {
-		// smooth-scroll to bottom of page to reveal sign-up form
-		$('.dialog.inline')[0].scrollIntoView({ behavior: "smooth", block: "center" });
-		// $('#email').focus();
+	scrollTo(sel) {
+		// smooth scroll to selector
+		$(sel)[0].scrollIntoView({ behavior: "smooth", block: "center" });
 	},
 	
 	moveShip(event) {
