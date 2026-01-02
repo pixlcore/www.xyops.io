@@ -77,15 +77,19 @@ body.game {
 	margin-bottom: 10px;
 	font-size: 19px;
 }
-.words > h4 {
+.words > h4, .words > .h4 {
 	margin-top: 0;
+	font-weight: bold;
 	font-style: italic;
 	color: var(--blue);
 	cursor: pointer;
 }
-.words > h4:hover {
+.words > h4:hover, .words > .h4:hover {
 	color: var(--theme-color);
 	text-decoration: underline;
+}
+.words > .h4 i.mdi {
+	padding-left: 5px;
 }
 
 .ss_wrap {
