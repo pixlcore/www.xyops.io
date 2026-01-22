@@ -1,7 +1,7 @@
 {
 	"name": "www.xyops.io",
 	"private": true,
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"description": "The xyOps.io website.",
 	"author": "Joseph Huckaby <jhuckaby@pixlcore.com>",
 	"homepage": "https://github.com/pixlcore/www.xyops.io",
@@ -48,6 +48,11 @@
 			"path": "lib/api.js",
 			"max_requests_per_sec": 100,
 			"max_concurrent_requests": 10
+		},
+		{
+			"type": "redirect",
+			"uri_match": "^/docs/([\\w\\-\\/]+)$",
+			"location": "https://docs.xyops.io/#Docs/$1"
 		},
 		{
 			"type": "static",
