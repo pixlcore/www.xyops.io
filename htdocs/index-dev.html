@@ -30,7 +30,20 @@
 </head>
 
 <body class="dark">
+<div id="top"></div>
 <div id="toaster"></div>
+
+<div class="header_cont">
+	<div class="header_inner">
+		<div class="header_item hi_logo"></div>
+		<div class="header_item"><a href="#top"><i class="mdi mdi-home"></i><span>Home</span></a></div>
+		<div class="header_item"><a href="https://docs.xyops.io"><i class="mdi mdi-bookshelf"></i><span>Docs</span></a></div>
+		<div class="header_item"><a href="#pricing"><i class="mdi mdi-currency-usd"></i><span>Pricing</span></a></div>
+		<div class="header_item"><a href="https://marketplace.xyops.io"><i class="mdi mdi-cart-variant"></i><span>Marketplace</span></a></div>
+		<div class="header_item"><a href="https://github.com/pixlcore/xyops"><i class="mdi mdi-github"></i><span>GitHub</span></a></div>
+	</div>
+</div>
+
 <div class="container">
 	
 	<div class="hero">
@@ -38,8 +51,8 @@
 			<div class="logo"></div>
 			<h1>Orchestrate your entire infrastructure</h1>
 			<h2>xyOps&trade; is a next-generation workflow automation system, with job scheduling, monitoring, alerting, and ticketing all built right in.</h2>
-			<h3>The xyOps beta is now live!</h3>
-			<a class="h4" href="https://github.com/pixlcore/xyops" target="_blank">Check it out here<i class="mdi mdi-open-in-new"></i></a>
+			<!-- <h3>The xyOps beta is now live!</h3> -->
+			<!-- <a class="h4" href="https://github.com/pixlcore/xyops" target="_blank">Check it out here<i class="mdi mdi-open-in-new"></i></a> -->
 			<!-- <h4 onClick="app.scrollTo('.dialog.inline')">Sign up to be notified!</h4> -->
 		</div>
 		<div class="ss_wrap">
@@ -285,12 +298,12 @@
 	<!-- Licensing -->
 	<div id="d_license" class="detail_section layout_2">
 		<div class="detail_list">
-			<div class="detail_title" style="color:var(--green)">Pricing &amp; Licensing</div>
+			<div class="detail_title" style="color:var(--green)">Licensing</div>
 			<div class="detail_item">xyOps&trade; is 100% free and open source under the BSD 3-Clause license, <b>and it always will be.</b></div>
 			<div class="detail_item">The license will never be modified, split, or amended with additional restrictive terms.</div>
 			<div class="detail_item">No new code or contributions will ever be accepted under a non-OSI-approved license.</div>
-			<div class="detail_item">We will offer cloud hosting and enterprise support plans separately (pricing to be announced).</div>
-			<div class="detail_item">All current and future features will be open source forever.</div>
+			<div class="detail_item">We offer professional and enterprise support plans separately (see below for pricing).</div>
+			<div class="detail_item">All current and future app features will be open source forever.</div>
 		</div>
 		<div class="detail_shot">
 			<div class="detail_glow" style="background:var(--green); opacity:0.2;"></div>
@@ -298,8 +311,84 @@
 		</div>
 	</div>
 	
+	<!-- Pricing Table -->
+	
+	<div class="d_pricing_container">
+		<div class="d_pricing_bkgnd"></div>
+		
+		<div class="d_pricing" id="pricing">
+			<div class="pricing_title_cont">
+				<div class="pt_title_left">Pricing</div>
+				<div class="pt_title_right">
+					<div class="pt_billing_toggle" onClick="app.togglePricingMode(this)" data-mode="yearly"><i class="mdi mdi-checkbox-marked"></i>Yearly Billing</div>
+				</div>
+			</div>
+			
+			<div class="pricing_tiers">
+				
+				<div class="pricing_tier pt_free">
+					<div class="pt_title">Free</div>
+					<div class="pt_info">For individuals looking to self-host xyOps.</div>
+					<div class="pt_price">$0<span>/mo</span></div>
+					<div class="pt_subprice">Free forever</div>
+					
+					<div class="pt_button"><a class="button" href="https://docs.xyops.io/hosting">Install Now<i class="mdi mdi-arrow-right"></i></a></div>
+					
+					<div class="pt_feat_label">Free includes:</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>All app features</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>Community support</div>
+					
+					<div class="pt_spacer"></div>
+				</div>
+				
+				<div class="pricing_tier pt_pro">
+					<div class="pt_title">Professional</div>
+					<div class="pt_info">For small teams or early stage startups.</div>
+					<div class="pt_price">$167<span>/mo</span></div>
+					<div class="pt_subprice">$2,000 billed annually</div>
+					
+					<div class="pt_button"><a class="button primary" href="https://platform.pixlcore.com/api/app/polar_start?product=xyops-professional-yearly">Sign Up<i class="mdi mdi-arrow-right"></i></a></div>
+					
+					<div class="pt_feat_label">Professional plan includes:</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>All app features</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>Professional support</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>Private ticketing system</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>24 hour turnaround on tickets</div>
+					
+					<div class="pt_spacer"></div>
+				</div>
+				
+				<div class="pricing_tier pt_ent">
+					<div class="pt_title">Enterprise</div>
+					<div class="pt_info">For larger businesses running xyOps at production scale.</div>
+					<div class="pt_price">$834<span>/mo</span></div>
+					<div class="pt_subprice">$10,000 billed annually</div>
+					
+					<div class="pt_button"><a class="button primary" href="https://platform.pixlcore.com/api/app/polar_start?product=xyops-enterprise-yearly">Sign Up<i class="mdi mdi-arrow-right"></i></a></div>
+					
+					<div class="pt_feat_label">Enterprise plan includes:</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>All app features</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>Enterprise support</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>SSO setup and support</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>Air-gapped installation support</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>Private ticketing system</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>1 hour turnaround on tickets *</div>
+					<div class="pt_feature"><i class="mdi mdi-check-circle"></i>Live chat with our team *</div>
+					
+					<div class="pt_spacer"></div>
+				</div>
+				
+			</div> <!-- pricing_tiers -->
+			
+			<div class="pt_footer">
+				<div class="pt_footer_left">All prices are in USD.</div>
+				<div class="pt_footer_right">* During normal business hours in the Pacific time zone.</div>
+			</div>
+		</div> <!-- d_pricing -->
+	</div> <!-- d_pricing_container -->
+	
 	<!-- Sign Up Form -->
-	<div class="vingette">
+	<div class="vingette" style="display:none">
 		<div id="ship"><div id="flame"></div></div>
 		<form action="post" class="signup">
 			

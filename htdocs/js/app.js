@@ -80,6 +80,8 @@ var app = {
 			
 		}, 50 );
 		
+		return;
+		
 		// ship game
 		this.ship = {
 			elem: $('#ship')[0],
@@ -481,6 +483,42 @@ var app = {
 		}
 		
 		this.toast({ type, icon, msg, lifetime, loc });
+	},
+	
+	togglePricingMode(elem) {
+		// toggle between yearly / monthly billing display
+		var $elem = $(elem);
+		if ($elem.data('mode') == 'yearly') $elem.data('mode', 'monthly');
+		else $elem.data('mode', 'yearly');
+		
+		var $pricing = $('#pricing');
+		var url_prefix = 'https://platform.pixlcore.com/api/app/polar_start?product=';
+		
+		switch ($elem.data('mode')) {
+			case 'monthly':
+				$elem.find('i.mdi').removeClass().addClass('mdi mdi-checkbox-blank-outline');
+				
+				$pricing.find('.pricing_tier.pt_pro .pt_price').html( `$200` + `<span>/mo</span>` );
+				$pricing.find('.pricing_tier.pt_pro .pt_subprice').html( `Billed monthly` );
+				$pricing.find('.pricing_tier.pt_pro .pt_button a').attr('href', url_prefix + 'xyops-professional-monthly');
+				
+				$pricing.find('.pricing_tier.pt_ent .pt_price').html( `$1,000` + `<span>/mo</span>` );
+				$pricing.find('.pricing_tier.pt_ent .pt_subprice').html( `Billed monthly` );
+				$pricing.find('.pricing_tier.pt_ent .pt_button a').attr('href', url_prefix + 'xyops-enterprise-monthly');
+			break;
+			
+			case 'yearly':
+				$elem.find('i.mdi').removeClass().addClass('mdi mdi-checkbox-marked');
+				
+				$pricing.find('.pricing_tier.pt_pro .pt_price').html( `$167` + `<span>/mo</span>` );
+				$pricing.find('.pricing_tier.pt_pro .pt_subprice').html( `$2,000 billed annually` );
+				$pricing.find('.pricing_tier.pt_pro .pt_button a').attr('href', url_prefix + 'xyops-professional-yearly');
+				
+				$pricing.find('.pricing_tier.pt_ent .pt_price').html( `$834` + `<span>/mo</span>` );
+				$pricing.find('.pricing_tier.pt_ent .pt_subprice').html( `$10,000 billed annually` );
+				$pricing.find('.pricing_tier.pt_ent .pt_button a').attr('href', url_prefix + 'xyops-enterprise-yearly');
+			break;
+		}
 	},
 	
 	signUp() {
