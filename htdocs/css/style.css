@@ -76,7 +76,7 @@ body.game {
 	font-size: 15px;
 	font-weight: bold;
 	text-align: right;
-	opacity: 0.75;
+	opacity: 0.95;
 	transition: opacity 0.5s ease-in-out;
 	will-change: opacity;
 	
