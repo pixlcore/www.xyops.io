@@ -1,7 +1,7 @@
 {
 	"name": "www.xyops.io",
 	"private": true,
-	"version": "1.0.17",
+	"version": "1.0.18",
 	"description": "The xyOps.io website.",
 	"author": "Joseph Huckaby <jhuckaby@pixlcore.com>",
 	"homepage": "https://github.com/pixlcore/www.xyops.io",
@@ -68,6 +68,16 @@
 			"type": "redirect",
 			"uri_match": "^/pricing/?$",
 			"location": "https://xyops.io/#pricing"
+		},
+		{
+			"type": "redirect",
+			"uri_match": "^/terms/?$",
+			"location": "https://docs.xyops.io/#Docs/terms"
+		},
+		{
+			"type": "redirect",
+			"uri_match": "^/privacy/?$",
+			"location": "https://docs.xyops.io/#Docs/privacy"
 		},
 		{
 			"type": "static",
